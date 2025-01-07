@@ -21,5 +21,8 @@ urlpatterns = [
     # path('stuinfo/<int:pk>', views.student_detail),
     # path('stuinfo/', views.student_list),
     # path('stucreate/', views.student_create),
-    path('crud/', views.student_api),
+    # path('crud/', views.student_api),
+    # path('crud/<int:pk>', views.student_api),
+    path('crud/', views.StudentAPI.as_view()),
+    path('crud/<int:pk>', views.StudentAPI.as_view()),
 ]
